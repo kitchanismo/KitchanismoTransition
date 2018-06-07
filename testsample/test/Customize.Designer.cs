@@ -1,6 +1,6 @@
 ﻿namespace test
 {
-    partial class CustomizeTransition
+    partial class Customize
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.rbfr = new System.Windows.Forms.RadioButton();
+            this.rbfl = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pnnav = new System.Windows.Forms.Panel();
@@ -45,13 +47,11 @@
             this.btntab4 = new System.Windows.Forms.Button();
             this.btntab3 = new System.Windows.Forms.Button();
             this.btntab2 = new System.Windows.Forms.Button();
-            this.rb1 = new System.Windows.Forms.RadioButton();
-            this.rb2 = new System.Windows.Forms.RadioButton();
+            this.rbSwap = new System.Windows.Forms.RadioButton();
+            this.rbPush = new System.Windows.Forms.RadioButton();
             this.gbswap = new System.Windows.Forms.GroupBox();
-            this.rb3 = new System.Windows.Forms.RadioButton();
+            this.rbIntersect = new System.Windows.Forms.RadioButton();
             this.gblocation = new System.Windows.Forms.GroupBox();
-            this.rbfr = new System.Windows.Forms.RadioButton();
-            this.rbfl = new System.Windows.Forms.RadioButton();
             this.rbfd = new System.Windows.Forms.RadioButton();
             this.rbfu = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -67,6 +67,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblversion = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnGenerate = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,13 +117,11 @@
             this.label3.Size = new System.Drawing.Size(177, 30);
             this.label3.TabIndex = 10;
             this.label3.Text = "KITCHANISMO";
-            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnmain_MouseDown);
-            this.label3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnmain_MouseMove);
-            this.label3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnmain_MouseUp);
             // 
             // btntab1
             // 
             this.btntab1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btntab1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntab1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntab1.ForeColor = System.Drawing.Color.White;
@@ -181,6 +180,34 @@
             this.label2.Size = new System.Drawing.Size(100, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Panel 1";
+            // 
+            // rbfr
+            // 
+            this.rbfr.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbfr.AutoSize = true;
+            this.rbfr.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbfr.ForeColor = System.Drawing.Color.White;
+            this.rbfr.Location = new System.Drawing.Point(178, 29);
+            this.rbfr.Name = "rbfr";
+            this.rbfr.Size = new System.Drawing.Size(100, 24);
+            this.rbfr.TabIndex = 22;
+            this.rbfr.Text = "from Right";
+            this.rbfr.UseVisualStyleBackColor = true;
+            // 
+            // rbfl
+            // 
+            this.rbfl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbfl.AutoSize = true;
+            this.rbfl.Checked = true;
+            this.rbfl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbfl.ForeColor = System.Drawing.Color.White;
+            this.rbfl.Location = new System.Drawing.Point(61, 29);
+            this.rbfl.Name = "rbfl";
+            this.rbfl.Size = new System.Drawing.Size(91, 24);
+            this.rbfl.TabIndex = 21;
+            this.rbfl.TabStop = true;
+            this.rbfl.Text = "from Left";
+            this.rbfl.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -253,6 +280,7 @@
             // btntab4
             // 
             this.btntab4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btntab4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntab4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntab4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntab4.ForeColor = System.Drawing.Color.DimGray;
@@ -267,6 +295,7 @@
             // btntab3
             // 
             this.btntab3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btntab3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntab3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntab3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntab3.ForeColor = System.Drawing.Color.Gray;
@@ -281,6 +310,7 @@
             // btntab2
             // 
             this.btntab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btntab2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntab2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntab2.ForeColor = System.Drawing.Color.Silver;
@@ -292,40 +322,40 @@
             this.btntab2.UseVisualStyleBackColor = false;
             this.btntab2.Click += new System.EventHandler(this.btntab2_Click);
             // 
-            // rb1
+            // rbSwap
             // 
-            this.rb1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rb1.AutoSize = true;
-            this.rb1.Checked = true;
-            this.rb1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb1.ForeColor = System.Drawing.Color.White;
-            this.rb1.Location = new System.Drawing.Point(45, 28);
-            this.rb1.Name = "rb1";
-            this.rb1.Size = new System.Drawing.Size(68, 24);
-            this.rb1.TabIndex = 17;
-            this.rb1.TabStop = true;
-            this.rb1.Text = "Swap";
-            this.rb1.UseVisualStyleBackColor = true;
+            this.rbSwap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbSwap.AutoSize = true;
+            this.rbSwap.Checked = true;
+            this.rbSwap.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSwap.ForeColor = System.Drawing.Color.White;
+            this.rbSwap.Location = new System.Drawing.Point(45, 28);
+            this.rbSwap.Name = "rbSwap";
+            this.rbSwap.Size = new System.Drawing.Size(68, 24);
+            this.rbSwap.TabIndex = 17;
+            this.rbSwap.TabStop = true;
+            this.rbSwap.Text = "Swap";
+            this.rbSwap.UseVisualStyleBackColor = true;
             // 
-            // rb2
+            // rbPush
             // 
-            this.rb2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rb2.AutoSize = true;
-            this.rb2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb2.ForeColor = System.Drawing.Color.White;
-            this.rb2.Location = new System.Drawing.Point(136, 28);
-            this.rb2.Name = "rb2";
-            this.rb2.Size = new System.Drawing.Size(65, 24);
-            this.rb2.TabIndex = 18;
-            this.rb2.Text = "Wipe";
-            this.rb2.UseVisualStyleBackColor = true;
+            this.rbPush.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbPush.AutoSize = true;
+            this.rbPush.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPush.ForeColor = System.Drawing.Color.White;
+            this.rbPush.Location = new System.Drawing.Point(137, 28);
+            this.rbPush.Name = "rbPush";
+            this.rbPush.Size = new System.Drawing.Size(60, 24);
+            this.rbPush.TabIndex = 18;
+            this.rbPush.Text = "Push";
+            this.rbPush.UseVisualStyleBackColor = true;
             // 
             // gbswap
             // 
             this.gbswap.BackColor = System.Drawing.Color.Transparent;
-            this.gbswap.Controls.Add(this.rb3);
-            this.gbswap.Controls.Add(this.rb2);
-            this.gbswap.Controls.Add(this.rb1);
+            this.gbswap.Controls.Add(this.rbIntersect);
+            this.gbswap.Controls.Add(this.rbPush);
+            this.gbswap.Controls.Add(this.rbSwap);
             this.gbswap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbswap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.gbswap.Location = new System.Drawing.Point(375, 575);
@@ -335,19 +365,19 @@
             this.gbswap.TabStop = false;
             this.gbswap.Text = "Transition";
             // 
-            // rb3
+            // rbIntersect
             // 
-            this.rb3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rb3.AutoSize = true;
-            this.rb3.Enabled = false;
-            this.rb3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb3.ForeColor = System.Drawing.Color.White;
-            this.rb3.Location = new System.Drawing.Point(226, 27);
-            this.rb3.Name = "rb3";
-            this.rb3.Size = new System.Drawing.Size(60, 24);
-            this.rb3.TabIndex = 19;
-            this.rb3.Text = "Slide";
-            this.rb3.UseVisualStyleBackColor = true;
+            this.rbIntersect.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rbIntersect.AutoSize = true;
+            this.rbIntersect.Enabled = false;
+            this.rbIntersect.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbIntersect.ForeColor = System.Drawing.Color.White;
+            this.rbIntersect.Location = new System.Drawing.Point(224, 27);
+            this.rbIntersect.Name = "rbIntersect";
+            this.rbIntersect.Size = new System.Drawing.Size(92, 24);
+            this.rbIntersect.TabIndex = 19;
+            this.rbIntersect.Text = "Intersect";
+            this.rbIntersect.UseVisualStyleBackColor = true;
             // 
             // gblocation
             // 
@@ -365,45 +395,17 @@
             this.gblocation.TabStop = false;
             this.gblocation.Text = "Move";
             // 
-            // rbfr
-            // 
-            this.rbfr.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbfr.AutoSize = true;
-            this.rbfr.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbfr.ForeColor = System.Drawing.Color.White;
-            this.rbfr.Location = new System.Drawing.Point(176, 29);
-            this.rbfr.Name = "rbfr";
-            this.rbfr.Size = new System.Drawing.Size(102, 24);
-            this.rbfr.TabIndex = 22;
-            this.rbfr.Text = "Float Right";
-            this.rbfr.UseVisualStyleBackColor = true;
-            // 
-            // rbfl
-            // 
-            this.rbfl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rbfl.AutoSize = true;
-            this.rbfl.Checked = true;
-            this.rbfl.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbfl.ForeColor = System.Drawing.Color.White;
-            this.rbfl.Location = new System.Drawing.Point(65, 29);
-            this.rbfl.Name = "rbfl";
-            this.rbfl.Size = new System.Drawing.Size(93, 24);
-            this.rbfl.TabIndex = 21;
-            this.rbfl.TabStop = true;
-            this.rbfl.Text = "Float Left";
-            this.rbfl.UseVisualStyleBackColor = true;
-            // 
             // rbfd
             // 
             this.rbfd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbfd.AutoSize = true;
             this.rbfd.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfd.ForeColor = System.Drawing.Color.White;
-            this.rbfd.Location = new System.Drawing.Point(176, 29);
+            this.rbfd.Location = new System.Drawing.Point(178, 29);
             this.rbfd.Name = "rbfd";
-            this.rbfd.Size = new System.Drawing.Size(110, 24);
+            this.rbfd.Size = new System.Drawing.Size(108, 24);
             this.rbfd.TabIndex = 20;
-            this.rbfd.Text = "Float Down";
+            this.rbfd.Text = "from Down";
             this.rbfd.UseVisualStyleBackColor = true;
             // 
             // rbfu
@@ -412,11 +414,11 @@
             this.rbfu.AutoSize = true;
             this.rbfu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbfu.ForeColor = System.Drawing.Color.White;
-            this.rbfu.Location = new System.Drawing.Point(65, 29);
+            this.rbfu.Location = new System.Drawing.Point(61, 29);
             this.rbfu.Name = "rbfu";
-            this.rbfu.Size = new System.Drawing.Size(87, 24);
+            this.rbfu.Size = new System.Drawing.Size(85, 24);
             this.rbfu.TabIndex = 19;
-            this.rbfu.Text = "Float Up";
+            this.rbfu.Text = "from Up";
             this.rbfu.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -496,6 +498,7 @@
             // btntab5
             // 
             this.btntab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btntab5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntab5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntab5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntab5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
@@ -552,17 +555,28 @@
             this.num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.num.Font = new System.Drawing.Font("Century Gothic", 12.5F);
             this.num.ForeColor = System.Drawing.Color.White;
+            this.num.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
             this.num.Location = new System.Drawing.Point(221, 26);
             this.num.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
+            this.num.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.num.Name = "num";
+            this.num.ReadOnly = true;
             this.num.Size = new System.Drawing.Size(78, 28);
             this.num.TabIndex = 1;
             this.num.Value = new decimal(new int[] {
-            900,
+            1000,
             0,
             0,
             0});
@@ -634,16 +648,33 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "alt + f4";
             // 
-            // fivetabs
+            // btnGenerate
+            // 
+            this.btnGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGenerate.BackColor = System.Drawing.Color.White;
+            this.btnGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnGenerate.Location = new System.Drawing.Point(767, 636);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(106, 53);
+            this.btnGenerate.TabIndex = 29;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            // Customize
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(883, 700);
+            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pnmain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fivetabs";
+            this.Name = "Customize";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -692,8 +723,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox gbswap;
-        private System.Windows.Forms.RadioButton rb2;
-        private System.Windows.Forms.RadioButton rb1;
+        private System.Windows.Forms.RadioButton rbPush;
+        private System.Windows.Forms.RadioButton rbSwap;
         private System.Windows.Forms.GroupBox gblocation;
         private System.Windows.Forms.RadioButton rbfd;
         private System.Windows.Forms.RadioButton rbfu;
@@ -713,7 +744,8 @@
         private System.Windows.Forms.ComboBox cbo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton rb3;
+        private System.Windows.Forms.RadioButton rbIntersect;
         private System.Windows.Forms.Label lblversion;
+        private System.Windows.Forms.Button btnGenerate;
     }
 }

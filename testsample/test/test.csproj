@@ -11,7 +11,8 @@
     <RootNamespace>test</RootNamespace>
     <AssemblyName>test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -28,14 +29,15 @@
     <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="kitchanismo_transition">
-      <HintPath>bin\Debug\kitchanismo_transition.dll</HintPath>
+    <Reference Include="Kitchanismo, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Kitchanismo.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,26 +52,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneratedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneratedForm.Designer.cs">
+      <DependentUpon>GeneratedForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EaseFactory.cs" />
-    <Compile Include="SampleUse.cs">
+    <Compile Include="Customize.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SampleUse.Designer.cs">
-      <DependentUpon>SampleUse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomizeTransition.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomizeTransition.Designer.cs">
-      <DependentUpon>CustomizeTransition.cs</DependentUpon>
+    <Compile Include="Customize.Designer.cs">
+      <DependentUpon>Customize.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SampleUse.resx">
-      <DependentUpon>SampleUse.cs</DependentUpon>
+    <Compile Include="Transparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transparent.Designer.cs">
+      <DependentUpon>Transparent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GeneratedForm.resx">
+      <DependentUpon>GeneratedForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomizeTransition.resx">
-      <DependentUpon>CustomizeTransition.cs</DependentUpon>
+    <EmbeddedResource Include="Customize.resx">
+      <DependentUpon>Customize.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,7 +87,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Transparent.resx">
+      <DependentUpon>Transparent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

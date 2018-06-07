@@ -1,0 +1,12 @@
+C:\Users\Betsayda\Desktop\transition\testsample\test\bin\Debug\test.exe.config
+C:\Users\Betsayda\Desktop\transition\testsample\test\bin\Debug\test.exe
+C:\Users\Betsayda\Desktop\transition\testsample\test\bin\Debug\test.pdb
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.csprojResolveAssemblyReference.cache
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.Properties.Resources.resources
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.csproj.GenerateResource.Cache
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.exe
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.pdb
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.Customize.resources
+C:\Users\Betsayda\Desktop\transition\testsample\test\bin\Debug\Kitchanismo.pdb
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.GeneratedForm.resources
+C:\Users\Betsayda\Desktop\transition\testsample\test\obj\x86\Debug\test.Transparent.resources

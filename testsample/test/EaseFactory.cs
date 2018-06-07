@@ -2,50 +2,50 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using kitchanismo_transition;
+using Kitchanismo;
 
 namespace test
 {
    public class EaseFactory
     {
-            public static Dictionary<string, IEasing> t = new Dictionary<string, IEasing> { };
+            public static Dictionary<string, Easing> ease = new Dictionary<string, Easing> { };
 
             static EaseFactory()
             {
-                t.Clear();
-                tTypeList();
+                ease.Clear();
+                TypeList();
             }
 
-            static void tTypeList()
+            static void TypeList()
             {
-                t.Add("ease_cubicout", IEasing.cubicout);
-                t.Add("ease_cubicin", IEasing.cubicin);
+                ease.Add("ease_cubicout", Easing.CubicOut);
+                ease.Add("ease_cubicin", Easing.CubicIn);
 
-                t.Add("ease_cubicinout", IEasing.cubicinout);
-                t.Add("ease_bounceout", IEasing.bounceout);
+                ease.Add("ease_cubicinout",Easing.CubicInOut);
+                ease.Add("ease_bounceout", Easing.BounceOut);
 
-                t.Add("ease_linear", IEasing.linear);
-                t.Add("ease_quadin", IEasing.quadin);
+                ease.Add("ease_linear", Easing.Linear);
+                ease.Add("ease_quadin", Easing.QuadIn);
 
-                t.Add("ease_quadout", IEasing.quadout);
-                t.Add("ease_quadinout", IEasing.quadinout);
+                ease.Add("ease_quadout", Easing.QuadOut);
+                ease.Add("ease_quadinout", Easing.QuadInOut);
 
-                t.Add("ease_quintout", IEasing.quintout);
-                t.Add("ease_quintin", IEasing.quintin);
+                ease.Add("ease_quintout", Easing.QuintOut);
+                ease.Add("ease_quintin", Easing.QuintIn);
 
-                t.Add("ease_quintinout", IEasing.quintinout);
-                t.Add("ease_quartin", IEasing.quartin);
+                ease.Add("ease_quintinout", Easing.QuintInOut);
+                ease.Add("ease_quartin", Easing.QuartIn);
 
-                t.Add("ease_quartout", IEasing.quartout);
-                t.Add("ease_quartinout", IEasing.quartinout);
+                ease.Add("ease_quartout", Easing.QuartOut);
+                ease.Add("ease_quartinout", Easing.QuartInOut);
 
-                t.Add("ease_backin", IEasing.backin);
-                t.Add("ease_ineaseout", IEasing.ineaseout);
+                ease.Add("ease_backin", Easing.BackIn);
+                ease.Add("ease_ineaseout", Easing.EaseInOut);
             }
 
-            public static IEasing parseEase(string ease)
+            public static Easing ParseEase(string _ease)
             {
-                return t[ease];
+                return ease[_ease];
             }
         }
 }
